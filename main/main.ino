@@ -8,8 +8,13 @@ void setup() {
 }
 
 void loop() {
+  //Kill switch
   digitalWrite(EN1, HIGH);
+
+  //Let motor coast for now
   digitalWrite(IN_A1, LOW);
   digitalWrite(IN_B1, LOW);
+
+  //Don't have the motor turn
   analogWrite(PWM1, 0);
 }
